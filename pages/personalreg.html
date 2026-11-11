@@ -1,7 +1,91 @@
-This is our project 
-<<<<<<< HEAD
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Personal Information Registration</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
 
-hi
-=======
-ava 
->>>>>>> 408380b97689da05113ad7f2b3b2a3470cd367d7
+    <main>
+        <div class="form-container">
+
+            <h1>Personal Information Registration</h1>
+
+            <form action="attendancereg.html" method="get" novalidate>
+
+                <fieldset>
+                    <legend>Personal Details</legend>
+
+                    <div class="form-row">
+                        <label for="firstName">First Name</label>
+                        <input type="text" id="firstName" name="firstName"
+                               placeholder="Enter your first name"
+                               maxlength="50">
+                    </div>
+
+                    <div class="form-row">
+                        <label for="surname">Surname</label>
+                        <input type="text" id="surname" name="surname"
+                               placeholder="Enter your surname"
+                               maxlength="50">
+                    </div>
+
+
+                    <div class="form-row">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email"
+                               placeholder="name@example.com">
+                   </div>
+
+                   <div class="form-row">
+                        <label for="telephone">
+                         Telephone Number <span class="required">*</span>
+                        </label>
+                        <input type="tel" id="telephone" name="telephone"
+                               placeholder="+44 7700 900123"
+                               autocomplete="tel">
+                        <p class="hint">
+                          Please enter your telephone number with your
+                          country code, e.g. +44 or +353.
+                        </p>
+                  </div>
+
+                   <div class="form-row">
+                       <label for="dob">Date of Birth</label>
+                       <input type="date" id="dob" name="dob">
+                   </div>
+
+                   <div class="form-row">
+                       <label for="website">Personal/Portfolio Website (Optional)</label>
+                       <input type="url" id="website" name="website"
+                              placeholder="https://example.com">
+                   </div>
+
+                   <div class="form-row">
+                        <label for="nationality">
+                        Nationality <span class="required">*</span>
+                        </label>
+                        <select id="nationality" name="nationality">
+                          <option value="">Please select your nationality</option>
+                          <option value="irish">Irish</option>
+                          <option value="british">British</option>
+                          <option value="american">American</option>
+                          <option value="french">French</option>
+                          <option value="german">German</option>
+                          <option value="spanish">Spanish</option>
+                          <option value="other">Other</option>
+                        </select>
+                   </div>
+                </fieldset>
+
+                <button type="submit">Continue</button>
+
+            </form>
+
+        </div>
+    </main>
+
+</body>
+</html>
+

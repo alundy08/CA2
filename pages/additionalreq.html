@@ -1,3 +1,110 @@
-hello 
-my name is leticia
-how are u
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Physical Attendees Registration</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+    <main>
+        <div class="form-container">
+
+            <h1>Additional Requirements for Physical Attendees</h1>
+
+            <p>
+                Please complete the following information
+                to help us prepare for your attendance
+                at the conference.
+            </p>
+
+            <form action="review.html" method="get" novalidate>
+
+                <fieldset>
+                    <legend>Attendee Requirements</legend>
+
+                    <div class="form-row">
+                        <label for="passport">
+                            Passport Number <span class="required">*</span>
+                        </label>
+                        <input type="text" id="passport" name="passport"
+                               placeholder="Enter your passport number"
+                               maxlength="20">
+                    </div>
+
+                    <div class="form-row">
+                        <label for="photo">
+                            Attendance Badge Photo (Optional)
+                        </label>
+                        <input type="file" id="photo" name="photo"
+                               accept="image/*">
+                        <p class="hint">
+                            Upload a photo for your conference badge.
+                            Image files only, maximum size 5 MB.
+                        </p>
+                    </div>
+
+                    <div class="form-row">
+                        <label for="dietary">
+                            Dietary Requirements <span class="required">*</span>
+                        </label>
+                        <select id="dietary" name="dietary">
+                            <option value="">Select your dietary requirements</option>
+                            <option value="none">None</option>
+                            <option value="vegetarian">Vegetarian</option>
+                            <option value="vegan">Vegan</option>
+                            <option value="glutenfree">Gluten-free</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+
+                    <div class="form-row">
+                        <label for="otherDietary">
+                            Other Dietary Requirements
+                        </label>
+                        <input type="text" id="otherDietary"
+                               name="otherDietary"
+                               placeholder="Please specify your dietary requirements">
+                    </div>
+
+                    <div class="form-row">
+                        <label for="accessibility">
+                            Accessibility Requirements (Optional)
+                        </label>
+                        <textarea id="accessibility" name="accessibility"
+                                  rows="4" maxlength="500"
+                                  placeholder="Please tell us about any accessibility support you may need"></textarea>
+                    </div>
+
+                    <div class="form-row">
+                        <label for="comments">
+                            Additional Comments (Optional)
+                        </label>
+                        <textarea id="comments" name="comments"
+                                  rows="4" maxlength="500"
+                                  placeholder="Is there anything else you would like us to know?"></textarea>
+                    </div>
+
+                    <div class="form-row">
+                        <label for="badgeColour">
+                            Preferred Event Badge Colour (Optional)
+                        </label>
+                        <input type="color" id="badgeColour"
+                               name="badgeColour" value="#4169E1">
+                        <p class="hint">
+                            Choose a background colour for your
+                            conference attendance badge.
+                        </p>
+                    </div>
+
+                </fieldset>
+
+                <button type="submit">Continue</button>
+
+            </form>
+
+        </div>
+    </main>
+
+</body>
+</html>
