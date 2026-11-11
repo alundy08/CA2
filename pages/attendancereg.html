@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Attendance Registration</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+ <main>
+
+ <div class="form-container">
+
+ <h1>Attendance Registration</h1>
+
+<p>Please select your attendance preferences for the conference.</p>
+
+<form action="" method="get" novalidate>
+
+               
+    <!-- Attendance Type -->
+
+    <fieldset>
+    <legend>Attendance Type</legend>
+
+    <div class="form-row">
+
+    <label>How will you attend the conference?</label>
+
+    <input type="radio" id="physical" name="attendance" value="Physical">
+    <label for="physical">Physical</label>
+
+    <input type="radio" id="virtual" name="attendance" value="Virtual">
+    <label for="virtual">Virtual</label>
+
+    </div>
+
+    </fieldset>
+
+
+    
+    <fieldset>
+
+    <legend>Arrival Details</legend>
+
+    <div class="form-row">
+
+    <label for="arrivalDate">Arrival Date</label>
+
+    <input type="date" id="arrivalDate" name="arrivalDate" min="2027-01-04" max="2027-01-08">
+
+    </div>
+
+     <div class="form-row">
+
+     <label for="arrivalTime">Preferred Arrival Time</label>
+
+    <input type="time" id="arrivalTime" name="arrivalTime">
+
+    </div>
+
+    </fieldset>
+
+
+                
+    <fieldset>
+
+    <legend>Select Your Talks</legend>
+
+    <div class="options">
+
+     <label>
+    <input type="checkbox" name="talks" value="Web Development">  Web Development
+    </label>
+
+    <label>
+    <input type="checkbox" name="talks" value="Mobile Application Development"> Mobile Application Development
+    </label>
+
+    <label>
+    <input type="checkbox" name="talks" value="Artificial Intelligence"> Artificial Intelligence
+    </label>
+
+    <label>
+    <input type="checkbox" name="talks" value="Cybersecurity"> Cybersecurity
+    </label>
+
+    <label>
+     <input type="checkbox" name="talks" value="Computer Games Development"> Computer Games Development
+     </label>
+
+     <label>
+    <input type="checkbox" name="talks" value="Data Science"> Data Science
+     </label>
+
+    <label>
+    <input type="checkbox" name="talks" value="Cloud Computing"> Cloud Computing
+    </label>
+
+    <label>
+    <input type="checkbox" name="talks" value="Internet of Things"> Internet of Things
+    </label>
+
+    </div>
+
+     </fieldset>
+
+
+                
+    <fieldset>
+
+     <legend>Previous Experience</legend>
+
+    <div class="form-row">
+
+     <label for="webExperience">Web Development</label>
+
+    <input type="range" id="webExperience" name="webExperience" min="0" max="10" step="1" value="0">
+
+    </div>
+
+    <div class="form-row">
+
+     <label for="mobileExperience">Mobile Application Development</label>
+
+    <input type="range" id="mobileExperience" name="mobileExperience" min="0" max="10" step="1" value="0">
+
+    </div>
+
+    <div class="form-row">
+
+    <label for="aiExperience">Artificial Intelligence</label>
+
+    <input type="range" id="aiExperience" name="aiExperience" min="0" max="10" step="1" value="0">
+
+     </div>
+
+    <div class="form-row">
+
+    <label for="cyberExperience">Cybersecurity</label>
+
+    <input type="range" id="cyberExperience" name="cyberExperience"  min="0" max="10" step="1" value="0">
+
+    </div>
+
+    <div class="form-row">
+
+    <label for="gamesExperience">Computer Games Development</label>
+
+    <input type="range" id="gamesExperience" name="gamesExperience" min="0" max="10" step="1" value="0">
+
+    </div>
+
+    <div class="form-row">
+
+    <label for="dataExperience">Data Science</label>
+
+    <input type="range" id="dataExperience" name="dataExperience" min="0" max="10" step="1" value="0">
+
+    </div>
+
+    <div class="form-row">
+
+    <label for="cloudExperience">Cloud Computing</label>
+
+    <input type="range" id="cloudExperience" name="cloudExperience" min="0" max="10" step="1" value="0">
+
+    </div>
+
+    <div class="form-row">
+
+    <label for="iotExperience">Internet of Things</label>
+
+    <input type="range" id="iotExperience" name="iotExperience" min="0" max="10" step="1" value="0">
+
+     </div>
+
+     </fieldset>
+
+
+        <button type="submit">Continue</button>
+
+        </form>
+
+     </div>
+
+    </main>
+
+</body>
+
+</html>
