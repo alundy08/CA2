@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Review Registration</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<main>
+
+ <div class="form-container">
+
+   <h1>Review Your Registration</h1>
+
+   <p>Please review your details before submitting your registration.</p>
+
+  <form action="" method="get" novalidate>
+
+            
+
+    <fieldset>
+        <legend>Personal Information</legend>
+
+        <div class="form-row">
+            <label for="firstName">First Name</label>
+            <input type="text" id="firstName" name="firstName" readonly>
+        </div>
+
+        <div class="form-row">
+            <label for="surname">Surname</label>
+            <input type="text" id="surname" name="surname" readonly>
+        </div>
+
+        <div class="form-row">
+             <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" readonly>
+         </div>
+
+         <div class="form-row">
+             <label for="telephone">Telephone Number</label>
+            <input type="tel" id="telephone" name="telephone" readonly>
+        </div>
+
+        <div class="form-row">
+            <label for="dateOfBirth">Date of Birth</label>
+             <input type="text" id="dateOfBirth" name="dateOfBirth" readonly>
+        </div>
+
+        <div class="form-row">
+            <label for="website">Personal Website</label>
+            <input type="url" id="website" name="website" readonly>
+        </div>
+
+        <div class="form-row">
+             <label for="nationality">Nationality</label>
+            <input type="text" id="nationality" name="nationality" readonly>
+        </div>
+
+    </fieldset>
+
+    <fieldset>
+
+    <legend>Attendance Details</legend>
+
+    <div class="form-row">
+        <label for="attendance">Attendance Type</label>
+        <input type="text" id="attendance" name="attendance" readonly>
+    </div>
+
+    <div class="form-row">
+        <label for="arrivalDate">Arrival Date</label>
+        <input type="text" id="arrivalDate" name="arrivalDate" readonly>
+    </div>
+
+    <div class="form-row">
+        <label for="arrivalTime">Preferred Arrival Time</label>
+        <input type="text" id="arrivalTime" name="arrivalTime" readonly>
+    </div>
+
+    <div class="form-row">
+        <label for="talks">Selected Talks</label>
+        <input type="text" id="talks" name="talks" readonly>
+    </div>
+
+    <div class="form-row">
+        <label for="experience">Previous Experience</label>
+        <input type="text" id="experience" name="experience" readonly>
+    </div>
+
+     </fieldset>
+
+
+     <fieldset>
+
+    <legend>Additional Requirements</legend>
+
+     <div class="form-row">
+        <label for="passportNumber">Passport Number</label>
+        <input type="text" id="passportNumber" name="passportNumber" readonly>
+    </div>
+
+    <div class="form-row">
+        <label for="photo">Photo</label>
+        <input type="text" id="photo" name="photo" readonly>
+    </div>
+
+    <div class="form-row">
+        <label for="dietaryRequirements">Dietary Requirements</label>
+        <input type="text" id="dietaryRequirements" name="dietaryRequirements" readonly>
+     </div>
+
+    <div class="form-row">
+        <label for="otherDietary">Other Dietary Requirements</label>
+        <input type="text" id="otherDietary" name="otherDietary" readonly>
+    </div>
+
+    <div class="form-row">
+         <label for="accessibility">Accessibility Requirements</label>
+         <textarea id="accessibility" name="accessibility" rows="3" readonly></textarea>
+    </div>
+
+    <div class="form-row">
+         <label for="comments">Additional Comments</label>
+        <textarea id="comments" name="comments" rows="3" readonly></textarea>
+    </div>
+
+    <div class="form-row">
+        <label for="badgeColour">Preferred Event Badge Colour</label>
+        <input type="text" id="badgeColour" name="badgeColour" readonly>
+    </div>
+
+    </fieldset>
+
+    <fieldset>
+
+    <legend>Declaration</legend>
+
+    <div class="form-row">
+       <label>
+           <input type="checkbox" id="confirmInformation" name="confirmInformation" value="Yes">
+            I confirm that the information provided is accurate.
+        </label>
+    </div>
+
+    <div class="form-row">
+        <label>
+        <input type="checkbox" id="acceptTerms" name="acceptTerms" value="Yes">
+         I accept the conference registration terms and conditions.
+        </label>
+    </div>
+
+     <div class="form-row">
+        <label>
+        <input type="checkbox" id="futureConferences" name="futureConferences" value="Yes">
+         I would like to receive information about future conferences. (Optional)
+        </label>
+    </div>
+
+    </fieldset>
+
+
+    
+
+    <button type="submit">Submit Registration</button>
+
+</form>
+
+</div>
+
+</main>
+
+</body>
+
+</html>
